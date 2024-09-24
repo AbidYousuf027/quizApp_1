@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primaryColor: #B3541E;
+    --lightColor: #FFEDED;
+    --backgroundDark: #362222;
+    --textLight: #b85353;
+    --buttonHoverColor: #A0401A;
+}
+
+body {
+    background-color: var(--backgroundDark);
+    color: var(--textLight); 
+}
+
+.backgroundPrimary {
+    background-color: var(--primaryColor);
+}
+
+.backgroundLight {
+    background-color: var(--lightColor);
+}
+
+.txtPrimary {
+    color: var(--primaryColor);
+}
+
+h1, h2, h3 {
+    color: var(--textLight); 
+}
+
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--buttonHoverColor); 
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    #nextQuestion {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
